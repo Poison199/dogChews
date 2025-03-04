@@ -1,0 +1,46 @@
+.footer {
+  background-color: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer .socialLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .socialIcon {
+  position: relative;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer .socialIcon::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff4081;
+  transition: width 0.3s ease;
+}
+
+.footer .socialIcon:hover {
+  color: #ff4081;
+}
+
+.footer .socialIcon:hover::after {
+  width: 100%;
+}

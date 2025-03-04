@@ -1,0 +1,148 @@
+/* Product Page Container */
+.product-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #7c0f00; /* Deep cranberry red */
+    color: #ffd3cd; /* Soft white text */
+    min-height: 100vh;
+  }
+  
+/* Product Header */
+.product-header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Lighter border */
+    margin-bottom: 2rem;
+}
+  
+.product-header h1 {
+    font-size: 2.5rem;
+    color: #ffd3cd; /* White */
+    margin-bottom: 0.5rem;
+}
+  
+.product-header .product-tagline {
+    font-size: 1.2rem;
+    color: #ffd3cd; /* White */
+}
+  
+/* Product Content */
+.product-content {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.08); /* Subtle contrast */
+    border-radius: 10px;
+}
+  
+/* Product Image Section */
+.product-image {
+    flex: 1;
+    border-radius: 10px;
+    padding: 1rem;
+}
+  
+.product-image img {
+    width: 100%;  /* Make image take full width of its container */
+    max-width: 515px;  /* Set a max width to maintain structure */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image fills the box properly */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+  
+/* Product Details Section */
+.product-details {
+    flex: 1;
+    padding: 1rem;
+}
+  
+.product-details h2 {
+    font-size: 1.8rem;
+    color: #ffd3cd; /* White */
+    margin-bottom: 1rem;
+}
+  
+.product-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #ffd3cd; /* White */
+}
+  
+/* Key Features */
+.key-features h3 {
+    font-size: 1.4rem;
+    color: #ffd3cd; /* White */
+    margin-bottom: 1rem;
+}
+  
+.key-features ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.key-features ul li {
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffd3cd; /* White */
+}
+  
+/* Call to Action */
+.cta-section {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+  
+.cta-button {
+    background: #FFD700; /* Gold contrast */
+    color: #7c0f00;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+  
+.cta-button:hover {
+    background: #ffdb4d;
+    transform: scale(1.05);
+}
+  
+.cta-note {
+    font-size: 0.9rem;
+    color: #ffd3cd; /* White */
+    margin-top: 0.8rem;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .product-image {
+        text-align: center; /* Centers image in smaller screens */
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 400px; /* Adjust for mobile */
+        height: auto;
+    }
+
+    .product-header h1 {
+        font-size: 2rem;
+    }
+}
+

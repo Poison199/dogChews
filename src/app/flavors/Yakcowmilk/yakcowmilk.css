@@ -1,0 +1,145 @@
+/* Product Page Container */
+.product-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #545454; /* Light creamy yellow */
+    color: #fff; /* Dark grey text */
+    min-height: 100vh;
+}
+
+/* Product Header */
+.product-header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.product-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.product-header .product-tagline {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Product Content */
+.product-content {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+/* Product Image Section */
+.product-image {
+    flex: 1;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.product-image img {
+    width: 100%;  /* Image adapts to container width */
+    max-width: 515px;  /* Maintain structure on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper image display */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Product Details Section */
+.product-details {
+    flex: 1;
+    padding: 1rem;
+}
+
+.product-details h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.product-details p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+/* Key Features */
+.key-features h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.key-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-features ul li {
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+
+/* Call to Action */
+.cta-section {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.cta-button {
+    background: #d09a60; /* Soft golden brown */
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #b27a47; /* Darker golden brown for hover */
+    transform: scale(1.05);
+}
+
+.cta-note {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .product-image {
+        text-align: center; /* Center image for smaller screens */
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 400px; /* Adjust size for mobile */
+        height: auto;
+    }
+
+    .product-header h1 {
+        font-size: 2rem;
+    }
+}
